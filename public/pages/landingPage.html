@@ -114,10 +114,6 @@
                             <button class="tab-links" onclick="openForm('skills')">Skills</button>
                             <button class="tab-links" onclick="openForm('projects')">Projects</button>
                             <button class="tab-links" onclick="openForm('education')">Education</button>
-                            <div>
-                                <a class="tab-links" href="../downloads/Rohit Sahu Resume.pdf" download>Download
-                                    Resume</a>
-                            </div>
                         </div>
                         <div class="tab-contents">
                             <div id="skills" style="padding: 2%;">
@@ -211,6 +207,11 @@
                                 <br>
                             </div>
                         </div>
+                        <div>
+                            <a class="tab-links" style="display: flex; width: 50%; padding: 1%; margin: 10% auto 0 ;"
+                                href="../downloads/Rohit Sahu Resume.pdf" download>Download
+                                Resume</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,7 +244,6 @@
                     document.getElementById('skills').style.display = "none"
                     document.getElementById('education').style.display = "none"
                 }
-
             }
         </script>
 
@@ -259,24 +259,39 @@
                     <div id="footer">
                         <div class="footer-basic">
                             <footer>
-                                <div class="social"><a href="#">
-                                        <i class="icon"></i></a>LinkedIn<a href="#">
-                                        <i class="icon"></i></a>Github<a href="#">
-                                        <ul class="list-inline">
-                                            <li class="list-inline"><a href="#">Home</a></li>
-                                            <li class="list-inline"><a href="#">About</a></li>
-                                            <li class="list-inline"><a href="#">Contact</a></li>
+                                <div class="foot-container">
+                                    <div class="foot-links unde">
+                                        <ul>
+                                            <li><a class="under-line-eff" href="#">Home</a></li>
+                                            <li><a class="under-line-eff" href="#">About</a></li>
+                                            <li><a class="under-line-eff" href="#">Contact</a></li>
                                         </ul>
-                                        <p class="copyright">© 2023 Rohit Sahu. All rights reserved.</p>
-                                        <p class="made-by">Designed by <span>Rohit Sahu</span></p>
+                                    </div>
+                                    <div class="social">
+                                        <a href="https://github.com/irohitsahu" target="_blank"><img
+                                                src="../icon/github.png" alt="github" height="30px" width="30px"></a>
+                                        <a href="https://www.linkedin.com/in/irohitsahu/" target="_blank"><img
+                                                src="../icon/linkedin.png" alt="linkedin" height="30px"
+                                                width="30px"></a>
+                                        <a href="https://codepen.io/irohitsahu" target="_blank"><img
+                                                src="../icon/codepen.png" alt="codepen" height="30px" width="30px"></a>
+                                    </div>
+                                </div>
+                                <hr style="margin-top: 5%; opacity: 0.1;">
+                                <div class="copyright">
+                                    <p>Designed with <img src="../icon/heart.png" alt="love" height="16px" width="16px"
+                                            style="vertical-align: baseline;" /> by
+                                        <span>Rohit Sahu</span>
+                                    <p>© 2023 Rohit Sahu. All rights reserved.</p>
+                                    </p>
+                                </div>
                             </footer>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-    </div>
+        </div>
 
 
 </body>
