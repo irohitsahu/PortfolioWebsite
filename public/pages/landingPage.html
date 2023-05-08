@@ -11,11 +11,7 @@
 
 <body>
 
-    <script>
-        window.onbeforeunload = function () {
-            window.scrollTo(0, 0);
-        }
-    </script>
+
 
     <div class="scroll-container">
         <!-- navbar -->
@@ -53,21 +49,6 @@
                 </div>
             </div>
         </div>
-
-        <script>
-            window.onscroll = function () { myFunction() };
-
-            var navbar = document.getElementById("navbar");
-            var sticky = navbar.offsetTop;
-
-            function myFunction() {
-                if (window.pageYOffset >= sticky) {
-                    navbar.classList.add("sticky")
-                } else {
-                    navbar.classList.remove("sticky");
-                }
-            }
-        </script>
 
         <!-- about -->
         <div class="container-area">
@@ -111,10 +92,11 @@
                     <div id="resume">
                         <div id="section-headings">My <span>Resume</span></div>
                         <div class="tab">
+                            <button class="tab-links tab-links-focus" onclick="openForm('projects')">Projects</button>
                             <button class="tab-links" onclick="openForm('skills')">Skills</button>
-                            <button class="tab-links" onclick="openForm('projects')">Projects</button>
                             <button class="tab-links" onclick="openForm('education')">Education</button>
                         </div>
+
                         <div class="tab-contents">
                             <div id="skills" style="padding: 2%;">
 
@@ -217,36 +199,6 @@
             </div>
         </div>
 
-        <script>
-            function openForm(x) {
-
-                if (x === 'skills') {
-                    if (document.getElementById(x).style.display === "block")
-                        document.getElementById(x).style.display = "none"
-                    else
-                        document.getElementById(x).style.display = "block"
-                    document.getElementById('education').style.display = "none"
-                    document.getElementById('projects').style.display = "none"
-                }
-                if (x === 'education') {
-                    if (document.getElementById(x).style.display === "block")
-                        document.getElementById(x).style.display = "none"
-                    else
-                        document.getElementById(x).style.display = "block"
-                    document.getElementById('skills').style.display = "none"
-                    document.getElementById('projects').style.display = "none"
-                }
-                if (x === 'projects') {
-                    if (document.getElementById(x).style.display === "block")
-                        document.getElementById(x).style.display = "none"
-                    else
-                        document.getElementById(x).style.display = "block"
-                    document.getElementById('skills').style.display = "none"
-                    document.getElementById('education').style.display = "none"
-                }
-            }
-        </script>
-
         <!-- contact -->
 
         <div class="container-area">
@@ -260,13 +212,12 @@
                         <div class="footer-basic">
                             <footer>
                                 <div class="foot-container">
-                                    <div class="foot-links unde">
-                                        <ul>
-                                            <li><a class="under-line-eff" href="#">Home</a></li>
-                                            <li><a class="under-line-eff" href="#">About</a></li>
-                                            <li><a class="under-line-eff" href="#">Contact</a></li>
-                                        </ul>
+
+                                    <div class="contact-info">
+                                        <p>+91-9399652548</p>
+                                        <p>irohitsahu97@gmail.com</p>
                                     </div>
+
                                     <div class="social">
                                         <a href="https://github.com/irohitsahu" target="_blank"><img
                                                 src="../icon/github.png" alt="github" height="30px" width="30px"></a>
@@ -277,7 +228,7 @@
                                                 src="../icon/codepen.png" alt="codepen" height="30px" width="30px"></a>
                                     </div>
                                 </div>
-                                <hr style="margin-top: 5%; opacity: 0.1;">
+                                <hr style="opacity: 0.1;">
                                 <div class="copyright">
                                     <p>Designed with <img src="../icon/heart.png" alt="love" height="16px" width="16px"
                                             style="vertical-align: baseline;" /> by
@@ -295,5 +246,6 @@
 
 
 </body>
+<script src="../scripts/landingPage.js"></script>
 
 </html>
